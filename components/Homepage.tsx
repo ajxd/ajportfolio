@@ -6,9 +6,15 @@ import Spline from "@splinetool/react-spline";
 const HomePage: React.FC = () => {
   return (
     <div style={{ backgroundColor: "#000", color: "#fff", overflow: "hidden" }}>
-      <Canvas style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}>
-        <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} />
+      <Canvas
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+        }}
+      >
         <Stars radius={100} depth={50} count={5000} factor={4} fade speed={1} />
         <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={1.5} />
       </Canvas>
@@ -23,7 +29,7 @@ const HomePage: React.FC = () => {
           pointerEvents: "auto",
         }}
       >
-        <Spline scene="https://prod.spline.design/9xC6CM0AbJ8RZwSn/scene.splinecode"/>
+        <Spline scene="https://prod.spline.design/9xC6CM0AbJ8RZwSn/scene.splinecode" />
       </div>
     </div>
   );
