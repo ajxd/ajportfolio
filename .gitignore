@@ -1,0 +1,10 @@
+/node_modules
+/.next
+.DS_Store
+.env
+*.log
+*.lock
+# Exclude specific problematic files
+node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node
+
+
