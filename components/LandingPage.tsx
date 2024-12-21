@@ -8,13 +8,13 @@ const LandingPage: React.FC = () => {
   useEffect(() => {
     const handleSplineClick = (event: MouseEvent) => {
       const anchorTag = (event.target as HTMLElement).closest("a");
-      if (anchorTag && anchorTag.href === "http://localhost:3000/home") {
+      if (anchorTag && anchorTag.href === window.location.origin + "/home") {
         event.preventDefault();
         router.push("/home");
       }
     };
 
-    const splineContainer = document.querySelector("#spline-container");
+    const splineContainer = document.getElementById("spline-container");
     if (splineContainer) {
       splineContainer.addEventListener("click", handleSplineClick);
     }
@@ -27,7 +27,7 @@ const LandingPage: React.FC = () => {
   }, [router]);
 
   return (
-    <div style={{ backgroundColor: "rgb(239, 239, 239)", overflow: "hidden" }}>
+    <div style={{ backgroundColor: "#EFEFEF", overflow: "hidden", height: "100vh" }}>
       <div
         id="spline-container"
         style={{
