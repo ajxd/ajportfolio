@@ -1,4 +1,4 @@
-import React from "react";
+=import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
 import Spline from "@splinetool/react-spline";
