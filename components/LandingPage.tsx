@@ -40,12 +40,7 @@ const LandingPage: React.FC = () => {
           pointerEvents: "auto",
         }}
       >
-        <Spline scene="https://prod.spline.design/dY7qMkPj2WBtUDJH/scene.splinecode" 
-      />
-    </main>
-  );
-}
- />
+        <Spline scene="https://prod.spline.design/dY7qMkPj2WBtUDJH/scene.splinecode" />
       </div>
     </div>
   );
