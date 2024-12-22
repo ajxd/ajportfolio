@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
           pointerEvents: "auto",
         }}
       >
-        <Spline scene="https://prod.spline.design/9xC6CM0AbJ8RZwSn/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/gyIfzAjz0VDA2HAO/scene.splinecode" />
       </div>
     </div>
   );
